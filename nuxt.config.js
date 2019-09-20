@@ -12,7 +12,14 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylecheet', type: 'text/css', href: '~/assets/css/owl.carousel.min.css' },
+      { rel: 'stylecheet', type: 'text/css', href: '~/assets/css/owl.theme.default.css' },
+    ],
+    script: [
+      { src: "https://kit.fontawesome.com/7ccf14bcd9.js"},
+      { src: "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"},
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js' },
     ]
   },
   /*

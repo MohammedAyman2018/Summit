@@ -19,4 +19,8 @@ export default {
 <style>
 @import 'tailwindcss';
 
+html{
+  font-family: sans-serif
+}
+
 </style>
