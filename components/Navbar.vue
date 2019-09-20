@@ -1,56 +1,49 @@
 <template>
-    <nav class="flex items-center justify-between flex-wrap p-6 absolute z-50 w-full object-top">
-        <div class="flex items-center w-1/4 flex-shrink-0 text-white mr-6">
-            <img src="~/assets/img/logo.png" alt="logo">
-        </div>
-        <div class="block lg:hidden">
-            <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-            </button>
-        </div>
-        <div class="block flex-grow w-1/4 lg:flex lg:items-center lg:w-auto">
-            <div class="text-sm lg:flex-grow">
-                <a href="#responsive-header" class="block mt-4 lg:inline-block font-black text-lg lg:mt-0 hover:text-white mr-1 bg-blue-600 p-3 text-white">
-                    HOME
-                </a>
-                <a href="#responsive-header" class="block mt-4 lg:inline-block font-black text-lg lg:mt-0 hover:text-white mr-1 hover:bg-blue-600 p-3 text-white">
-                    SPEAKERS
-                </a>
-                <a href="#responsive-header" class="block mt-4 lg:inline-block font-black text-lg lg:mt-0 hover:text-white mr-1 hover:bg-blue-600 p-3 text-white">
-                    TICKETS
-                </a>
-                <a href="#responsive-header" class="block mt-4 lg:inline-block font-black text-lg lg:mt-0 hover:text-white mr-1 hover:bg-blue-600 p-3 text-white">
-                    BLOG
-                </a>
-                <a href="#responsive-header" class="block mt-4 lg:inline-block font-black text-lg lg:mt-0 hover:text-white mr-1 hover:bg-blue-600 p-3 text-white">
-                    CONTACT 
-                </a>
-            </div>
-            
+<div>
+    <nav class="flex items-center flex-wrap p-6 absolute z-50 w-full object-top">
+        <div class="logo w-3/4 sm:w-full sm:text-center">
+            <img src="~/assets/img/logo.png" class="sm:inline" alt="logo">
         </div>
 
-        <div class="block flex-grow w-1/4 lg:flex lg:items-center lg:w-auto">
-            <div class="text-sm lg:flex-grow">
-                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-lg mr-5 text-white">
-                    <i class="fab fa-pinterest"></i>    
-                </a>
-                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-lg mr-5 text-white">
-                    <i class="fab fa-facebook-f"></i>    
-                </a>
-                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-lg mr-5 text-white">
-                    <i class="fab fa-twitter"></i>    
-                </a>
-                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-lg mr-5 text-white">
-                    <i class="fab fa-dribbble"></i>  
-                </a>
-                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-lg mr-5 text-white">
-                    <i class="fab fa-behance"></i>  
-                </a>
-                
+        <button @click="toggle" class="border-gray-400 bg-black w-1/4 py-2 px-1 rounded sm:hidden">
+            <span class="text-white">Menu</span>
+            <i class="fas fa-bars text-white"></i>
+        </button>
+
+        <div id="collabse" class="block w-full mt-5 hidden sm:mt-0 sm:flex flex-wrap sm:w-full sm:mx-auto">
+            <div class="bg-black sm:bg-transparent flex items-center text-center sm:w-full">
+                <ul class="w-full">
+                    <li class="text-center my-2 sm:inline-block">
+                        <a href="#" class="bg-blue-700 p-5 w-11/12 text-white font-black inline-block sm:px-2">HOME</a>
+                    </li>
+                    <li class="text-center my-2 sm:inline-block">
+                        <a href="#" class="hover:bg-blue-700 p-5 w-11/12 text-white font-black inline-block sm:px-2">SPEAKERS</a>
+                    </li>
+                    <li class="text-center my-2 sm:inline-block">
+                        <a href="#" class="hover:bg-blue-700 p-5 w-11/12 text-white font-black inline-block sm:px-2">TICKETS</a>
+                    </li>
+                    <li class="text-center my-2 sm:inline-block">
+                        <a href="#" class="hover:bg-blue-700 p-5 w-11/12 text-white font-black inline-block sm:px-2">BLOG</a>
+                    </li>
+                    <li class="text-center my-2 sm:inline-block">
+                        <a href="#" class="hover:bg-blue-700 p-5 w-11/12 text-white font-black inline-block sm:px-2">CONTACT</a>
+                    </li>
+                </ul>
             </div>
-            
+
+            <div class="bg-black p-5 top-social text-center sm:bg-transparent sm:w-full">
+                <a href="#"><i class="fab fa-pinterest text-white px-2 py-3"></i></a>
+                <a href="#"><i class="fab fa-facebook text-white px-2 py-3"></i></a>
+                <a href="#"><i class="fab fa-twitter text-white px-2 py-3"></i></a>
+                <a href="#"><i class="fab fa-dribbble text-white px-2 py-3"></i></a>
+                <a href="#"><i class="fab fa-behance text-white px-2 py-3"></i></a>
+                <a href="#" class="text-white bg-indigo-700 px-2 py-3 "><i class="fas fa-search px-2 py-3 "></i></a>
+            </div>
         </div>
     </nav>
+    
+    
+</div>
 </template>
 
 <style>
@@ -58,3 +51,13 @@ nav{
     background: linear-gradient(to right, #ff1a6b, #2a34d0) 
 }
 </style>
+
+<script>
+export default {
+    methods:{
+        toggle(){
+            $('#collabse').slideToggle(300);
+        }
+    }
+}
+</script>
