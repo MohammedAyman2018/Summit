@@ -13,13 +13,12 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylecheet', type: 'text/css', href: '~/assets/css/owl.carousel.min.css' },
-      { rel: 'stylecheet', type: 'text/css', href: '~/assets/css/owl.theme.default.css' },
+
+      { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css' },
     ],
     script: [
       { src: "https://kit.fontawesome.com/7ccf14bcd9.js"},
       { src: "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"},
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js' },
     ]
   },
   /*
@@ -36,7 +35,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    
+    { src: '~plugins/vue-owl-carousel' , ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -61,9 +60,11 @@ export default {
   ** Build configuration
   */
   build: {
+    
     /*
     ** You can extend webpack config here
     */
+   
     extend (config, ctx) {
     }
   }
