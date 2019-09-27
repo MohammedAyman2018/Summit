@@ -13,7 +13,6 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-
       { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css' },
     ],
     script: [
@@ -60,7 +59,8 @@ export default {
   ** Build configuration
   */
   build: {
-    
+    vendor: ['wowjs'],
+
     /*
     ** You can extend webpack config here
     */
