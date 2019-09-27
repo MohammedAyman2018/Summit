@@ -4,20 +4,23 @@
   <carousel />
   <timer />
   <speakers />
+  <workshops />
   
 </div>
 </template>
 
 <script>
-import carousel from '~/components/owl-carousel';
-import timer from '~/components/timer';
-import speakers from '~/components/speakers';
+import carousel from '~/components/Carousel';
+import timer from '~/components/Timer';
+import speakers from '~/components/Speakers';
+import workshops from '~/components/Workshops';
 
 export default {
   components:{
       carousel,
       timer,
-      speakers
+      speakers,
+      workshops
   }
 }
 </script>

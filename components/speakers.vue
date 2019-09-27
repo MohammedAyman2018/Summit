@@ -22,7 +22,7 @@
                 
             </div>
 
-                <button class="mt-10 w-1-3 bg-indigo-800 hover:bg-blue-700 text-white font-bold py-5 px-8 rounded text-2xl font-black">all speakers</button>
+                <button class="bg-indigo-800 mt-10 uppercase py-5 px-10 font-bold tracking-widest text-white rounded-lg">all speakers</button>
         </div>
     </div>
 </template>
