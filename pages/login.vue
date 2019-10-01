@@ -108,7 +108,11 @@ export default {
           // ...
         })
         .then(res => {
-          console.log(res);
+            this.$store.commit('assignUser', {name: res.user.displayName, img: res.user.photoURL, email: res.user.email})
+
+            this.$router.push({
+                path: '/'
+            })
         });
     },
     signUp() {
@@ -127,7 +131,11 @@ export default {
             photoURL: this.img
           });
 
-          alert("Done");
+         this.$store.commit('assignUser', {name: this.name, img: this.img, email: this.email})
+
+            this.$router.push({
+                path: '/'
+            })
         });
     },
     update() {

@@ -3,16 +3,12 @@ import Vue from 'vue'
 
 let user = firebase.auth().currentUser;
 
-
 if (user === null){
-
     let vm = new Vue({
-        methods:{
-            navigate(){
-                this.$router.push({
-                    path: '/login'
-                })
-            }
+        beforeMount (){
+            this.$router.push({
+                path: '/login'
+            })
         }
 
     })

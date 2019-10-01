@@ -59,11 +59,18 @@
           </ul>
         </div>
 
-        <div class="bg-black p-5 top-social text-center sm:bg-transparent sm:w-full lg:w-5/12">
-          <a href="#" class="text-white bg-indigo-700 px-2 py-3">
-            <i class="fas fa-search px-2 py-3"></i>
-          </a>
+        <div class="bg-black pt-5 top-social text-center sm:bg-transparent sm:w-full lg:w-3/12">
+        <div class="user flex flex-wrap">
+          <p class="rounded-full h-1/5 flex items-center justify-center bg-gray-500 w-1/5">MA</p>
+          <div class="w-4/5">
+            <span class="text-white text-lg">Mohammed Ayman</span>
+
+            <a href="#" class="mx-2 text-white bg-indigo-700 px-2 py-3">
+              <i class="fas fa-search px-2 py-3"></i>
+            </a>
+          </div>
         </div>
+        </div>        
       </div>
     </nav>
   </div>
@@ -80,6 +87,7 @@ nav {
 </style>
 
 <script>
+
 export default {
   methods: {
     toggle() {
