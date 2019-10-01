@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
+    "firebase": "^7.0.0",
     "nuxt": "^2.0.0",
     "tailwindcss": "^1.1.2",
     "vue-carousel": "^0.18.0",

@@ -10,20 +10,20 @@
         <div class="flex">
           <div class="inline-block w-2/6"></div>
           <div class="inline-block w-1/6">
-            <span class="text-white text-5xl font-black">{{ days }}</span>
-            <p class="text-white gont-light">days</p>
+            <span class="text-white text-5xl font-black">{{ days }} :</span>
+            <p class="text-white gont-light uppercase">days</p>
           </div>
           <div class="inline-block w-1/6">
-            <span class="text-white text-5xl font-black">{{ hours }}</span>
-            <p class="text-white gont-light">hours</p>
+            <span class="text-white text-5xl font-black">{{ hours }} :</span>
+            <p class="text-white gont-light uppercase">hours</p>
           </div>
           <div class="inline-block w-1/6">
-            <span class="text-white text-5xl font-black">{{ minutes }}</span>
-            <p class="text-white gont-light">minutes</p>
+            <span class="text-white text-5xl font-black">{{ minutes }} :</span>
+            <p class="text-white gont-light uppercase">minutes</p>
           </div>
           <div class="inline-block w-1/6">
             <span class="text-white text-5xl font-black">{{ second }}</span>
-            <p class="text-white gont-light">second</p>
+            <p class="text-white gont-light uppercase">second</p>
           </div>
         </div>
       </div>
