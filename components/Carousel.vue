@@ -1,57 +1,18 @@
 <template>
   <client-only placeholder="loading...">
-    <carousel 
-    :perPage="1"
-    :autoPlay="true"
-    :autoplayTimeout="50">
-      <slide>
-        <div class="banner flex flex-wrap">
-          <div class="typo text-white mb-2 w-full">
-            <span class="block font-bold">
-              February 9
-              <sup>TH</sup> - 15
-              <sup>TH</sup> 2019
-            </span>
-            <h1 class="mb-2 uppercase font-black leading-none">
-              Summit
-              <br />Conference
-              <br />2019
-            </h1>
-            <h2 class="font-bold relative">World Trade Center, Gibraltar</h2>
-          </div>
-        </div>
-      </slide>
-      <slide>
-        <div class="banner relative">
-          <div class="typo text-white mb-2">
-            <span class="block font-bold">
-              February 9
-              <sup>TH</sup> - 15
-              <sup>TH</sup> 2019
-            </span>
-            <h1 class="mb-2 uppercase font-black leading-none">
-              Summit
-              <br />Conference
-              <br />2019
-            </h1>
-            <h2 class="font-bold relative">World Trade Center, Gibraltar</h2>
-          </div>
-        </div>
-      </slide>
-      <slide>
-        <div class="banner relative">
-          <div class="typo text-white mb-2">
-            <span class="block font-bold">
-              February 9
-              <sup>TH</sup> - 15
-              <sup>TH</sup> 2019
-            </span>
-            <h1 class="mb-2 uppercase font-black leading-none">
-              Summit
-              <br />Conference
-              <br />2019
-            </h1>
-            <h2 class="font-bold relative">World Trade Center, Gibraltar</h2>
+    <carousel :perPage="1" :autoPlay="true" :autoplayTimeout="50">
+      <slide :key="index" v-for="(slide , index) in 3">
+        <div class="container mx-auto">
+          <div class="banner min-h-screen md:h-screen flex flex-wrap">
+            <div class="text-white pl-5 mt-40 mb-10 w-3/4">
+              <span class="block font-light text-4xl leading-snug">
+                February 9
+                <sup>TH</sup> - 15
+                <sup>TH</sup> 2019
+              </span>
+              <h1 class="mb-2 uppercase font-black text-4xl leading-none"> Summit <br/> Conference <br/> 2019 </h1>
+              <h2 class="font-bold">World Trade Center, Gibraltar</h2>
+            </div>
           </div>
         </div>
       </slide>
@@ -61,11 +22,10 @@
 
 <style>
 .banner {
-  height: 100vh;
   width: 100% !important;
 }
 
-.VueCarousel-slide{
+.VueCarousel-slide {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -80,30 +40,36 @@
   background-image: url("~assets/img/slider/bg-3.jpg");
 }
 
-.VueCarousel-pagination{
-    
-    position: absolute;
-    bottom: 31%;
-    display: flex;
-    justify-content: flex-end;
+.VueCarousel{
+  display: flex;
+  flex-direction: row 
 }
 
-.VueCarousel-pagination div.VueCarousel-dot-container{
-    display: flex; 
-    flex-direction: column; 
-    margin: 0 30px 0 0;
+.VueCarousel-wrapper{
+  width: 100%
 }
 
-.VueCarousel-pagination div.VueCarousel-dot-container button:focus{
-    outline: 0;
-    box-shadow: 0
+.VueCarousel-pagination {
+  position: absolute;
+  width: auto !important;
+  bottom: 31%;
+  right: 10px;
+  display: flex;
+  justify-content: flex-end;
 }
 
+.VueCarousel-pagination div.VueCarousel-dot-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px 0 0;
+}
+
+.VueCarousel-pagination div.VueCarousel-dot-container button:focus {
+  outline: 0;
+  box-shadow: 0;
+}
 </style>
 
 <script>
-
-export default {
-
-};
+export default {};
 </script>
