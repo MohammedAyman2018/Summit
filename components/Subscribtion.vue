@@ -1,6 +1,6 @@
 <template>
   <section>
-    <div class="container  mx-auto px-5 pt-32 bg-cover bg-no-repeat bg-center">
+    <div class="container  mx-auto px-5 py-32 bg-cover bg-no-repeat bg-center">
       
       <h2 class="text-2xl sm:text-4xl font-extrabold text-white">Never miss another seminar</h2>
       <p

@@ -8,7 +8,7 @@
   <workshops />
   <Speaches />
   <Subscribtion /> 
-
+  <mineFooter />
 </div>
 </template>
 <style scoped>
@@ -24,7 +24,7 @@ import speakers from '~/components/Speakers';
 import workshops from '~/components/Workshops';
 import Speaches from '~/components/Speaches';
 import Subscribtion from '~/components/Subscribtion';
-
+import mineFooter from '~/components/Footer';
 import firebase from 'firebase';
 
 export default {
@@ -46,6 +46,7 @@ export default {
       workshops,
       Speaches,
       Subscribtion,
+      mineFooter
   }
 }
 </script>

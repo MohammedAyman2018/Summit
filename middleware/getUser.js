@@ -13,8 +13,3 @@ if (user === null){
 
     })
 }
-
-
-    
-
-console.log('احا',user);
