@@ -5,8 +5,8 @@
   <carousel />
   <timer />
   <speakers />
-  <!-- <workshops />
-  <Speaches />
+  <workshops />
+  <!-- <Speaches />
   <Subscribtion /> -->
 
 </div>
