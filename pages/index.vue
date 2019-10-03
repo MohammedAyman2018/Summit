@@ -7,7 +7,7 @@
   <speakers />
   <workshops />
   <Speaches />
-  <!--<Subscribtion /> -->
+  <Subscribtion /> 
 
 </div>
 </template>
