@@ -1,7 +1,7 @@
 <template>
   <div class="relative">
-    <nav class="animated fadeIn flex items-center flex-wrap absolute z-50 w-full object-top">
-      <div class="logo w-3/4 sm:w-full sm:text-center lg:w-1/5">
+    <nav class="animated py-5 px-3 sm:p-0 md:pt-4 lg:pl-2 lg:py-5 fadeIn flex items-center flex-wrap absolute z-50 w-full object-top">
+      <div class="logo w-3/4 sm:w-full sm:text-center lg:w-1/6">
         <img src="~/assets/img/logo.png" class="sm:inline" alt="logo" />
       </div>
 
@@ -12,9 +12,9 @@
 
       <div
         id="collabse"
-        class="block w-full mt-5 hidden sm:mt-0 sm:flex flex-wrap sm:w-full sm:mx-auto lg:flex lg:w-4/5"
+        class="block w-11/12 mx-auto mt-5 hidden sm:mt-0 sm:flex flex-wrap sm:w-full sm:mx-auto lg:flex lg:w-5/6"
       >
-        <div class="bg-black sm:bg-transparent flex items-center text-center sm:w-full lg:w-7/12">
+        <div class="bg-black sm:bg-transparent flex items-center text-center sm:w-full lg:w-9/12">
           <ul class="w-full">
             <li class="text-center my-2 sm:inline-block">
               <nuxt-link
@@ -84,7 +84,10 @@ nav {
 }
 
 .active {
-  background-color: #000;
+  background-color: rgb(31, 50, 221);
+}
+#collabse{
+  z-index: 999
 }
 </style>
 

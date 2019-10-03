@@ -5,8 +5,8 @@
     :autoPlay="true"
     :autoplayTimeout="50">
       <slide>
-        <div class="banner relative">
-          <div class="typo text-white mb-2">
+        <div class="banner flex flex-wrap">
+          <div class="typo text-white mb-2 w-full">
             <span class="block font-bold">
               February 9
               <sup>TH</sup> - 15
@@ -65,10 +65,6 @@
   width: 100% !important;
 }
 
-.banner{
-  position: relative;
-}
-
 .VueCarousel-slide{
   background-repeat: no-repeat;
   background-size: cover;
@@ -84,24 +80,8 @@
   background-image: url("~assets/img/slider/bg-3.jpg");
 }
 
-
-.typo {
-  position: absolute;
-  top: 40%;
-  left: 10%;
-}
-
-.typo h1 {
-  font-size: 100px;
-}
-
-.typo h2,
-.typo span {
-  font-size: 32px;
-}
-
 .VueCarousel-pagination{
-    z-index: 999;
+    
     position: absolute;
     bottom: 31%;
     display: flex;

@@ -6,7 +6,7 @@
         <div class="speach bg-gray-300 px-5 pt-10 m-10 w-1/4 relative flex flex-col rounded-lg" :key="index" v-for="(speach, index) in all_speaches">
             <h2 class="text-4xl font-bold text-gray-900 leading-none h-32">{{ speach.Speach_name }}</h2>
             <div class="instructor mt-56">
-                <p class="text-lg font-extrabold text-gray-900">{{ speach.Instructor_name }}</p>
+                <p class="text-xl font-extrabold text-gray-900">{{ speach.Instructor_name }}</p>
                 <p class="text-lg text-gray-900">{{ speach.Instuctor_job }}</p>
             </div>
         </div>
