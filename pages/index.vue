@@ -6,8 +6,8 @@
   <timer />
   <speakers />
   <workshops />
-  <!-- <Speaches />
-  <Subscribtion /> -->
+  <Speaches />
+  <!--<Subscribtion /> -->
 
 </div>
 </template>
