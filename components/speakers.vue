@@ -22,18 +22,19 @@
                 </div>
                 
             </div>
-
-                <button class="bg-indigo-800 mx-5 mt-10 uppercase py-5 px-10 font-bold tracking-widest text-white rounded-lg">all speakers</button>
+                <btn class_names="bg-indigo-800 mx-5 mt-10 px-10 text-white" text="all speakers"/>
         </div>
     </div>
 </template>
 
 <script>
 import heading from '~/components/utils/heading';
+import btn from "~/components/utils/button"
 
 export default {
     components:{
-        heading
+        heading,
+        btn
     },
     computed: {
         counter(){

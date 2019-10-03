@@ -14,13 +14,9 @@
             Nunc tristique varius justo, laoreet tempus ex viverra ut. Curabitur laoreet egestas augue.
           </p>
           <div class="flex flex-wrap my-10 btns">
-            <button
-              class="bg-blue-700 w-5/12 uppercase py-5 font-bold tracking-widest text-white rounded-lg"
-            >more info</button>
+            <btn class_names="bg-blue-700 w-5/12 tracking-widest text-white" text="more info"/>
             <div class="w-1/12"></div>
-            <button
-              class="bg-green-500 w-6/12 uppercase py-5 font-bold tracking-widest text-white rounded-lg"
-            >buy tickets</button>
+            <btn class_names="bg-green-500 w-6/12 tracking-widest text-white" text="buy tickets"/>
           </div>
         </div>
       </div>
@@ -36,5 +32,10 @@
 </style>
 
 <script>
-export default {}
+import btn from "~/components/utils/button"
+export default {
+  components:{
+    btn
+  }
+}
 </script>
