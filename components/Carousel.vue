@@ -4,14 +4,14 @@
       <slide :key="index" v-for="(slide , index) in 3">
         <div class="container mx-auto">
           <div class="banner min-h-screen md:h-screen flex flex-wrap">
-            <div class="text-white pl-5 mt-40 mb-10 w-3/4">
-              <span class="block font-light text-4xl leading-snug">
+            <div class="text-white pl-5 mt-64 mb-10 w-3/4">
+              <span class="block font-light text-4xl leading-tite">
                 February 9
                 <sup>TH</sup> - 15
                 <sup>TH</sup> 2019
               </span>
-              <h1 class="mb-2 uppercase font-black text-4xl leading-none"> Summit <br/> Conference <br/> 2019 </h1>
-              <h2 class="font-bold">World Trade Center, Gibraltar</h2>
+              <h1 class="mb-2 uppercase font-black text-4xl md:text-6xl leading-tite"> Summit <br/> Conference <br/> 2019 </h1>
+              <h2 class="font-bold text-3xl pb-10">World Trade Center, Gibraltar</h2>
             </div>
           </div>
         </div>

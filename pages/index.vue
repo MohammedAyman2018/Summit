@@ -4,7 +4,10 @@
   <Navbar />
   <carousel />
   <timer />
-
+  <speakers />
+  <!-- <workshops />
+  <Speaches />
+  <Subscribtion /> -->
 
 </div>
 </template>
