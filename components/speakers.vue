@@ -1,8 +1,8 @@
 <template>
     <div id="speakers" class="py-10">
         <div class="container mx-auto">
-            <h2 class="text-dark font-black text-5xl mb-10">Keynote Speakers</h2>
-
+            <heading text="Keynote Speakers" />
+            
             <div class="flex justify-center mt-5">
                 <div class="w-1/3 mr-5">
                     <img src="~/assets/img/speaker-1.jpg" class="rounded-lg" alt="Jessica Doe">
@@ -28,7 +28,12 @@
 </template>
 
 <script>
+import heading from '~/components/utils/heading';
+
 export default {
+    components:{
+        heading
+    },
     computed: {
         counter(){
             return this.$store.state.counter
