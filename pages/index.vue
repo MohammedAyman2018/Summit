@@ -1,7 +1,6 @@
 <template>
 <div>
 
-  <Navbar />
   <carousel />
   <timer />
   <speakers />
@@ -17,7 +16,6 @@ h2,h1,h3,h4,h5,h6 , p {
 }
 </style>
 <script>
-import Navbar from '~/components/Navbar';
 import carousel from '~/components/Carousel';
 import timer from '~/components/Timer';
 import speakers from '~/components/Speakers';
@@ -39,7 +37,6 @@ export default {
   //   }
   // },
   components:{
-      Navbar,
       carousel,
       timer,
       speakers,

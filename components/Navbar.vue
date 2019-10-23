@@ -26,7 +26,7 @@
             </li>
             <li class="text-center my-2 sm:inline-block">
               <nuxt-link
-                to="/SPEAKERS"
+                to="/speakers"
                 class="p-5 text-white font-black inline-block p-4 uppercase"
                 exact
                 active-class="active"
