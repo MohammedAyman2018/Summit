@@ -5,23 +5,39 @@
             <heading text="Special Guests" />
             <card />
             <card />
-            
         </div>
-
+        <BuyTeckits />
+        <speakers :object=pass > </speakers>
+       
     </div>
 </template>
 
+<style scoped>
+
+</style>
 
 <script>
 import banner from '~/components/utils/banner';
 import heading from '~/components/utils/heading';
 import card from '~/components/GuestCard';
+import BuyTeckits from '~/components/BuyTeckits';
+import speakers from '~/components/Speakers';
 
 export default {
+    data(){
+        return{
+            pass:{
+                 number: 6 ,
+                 all: true
+            }
+        }
+    },
     components:{
         banner,
         heading,
-        card
+        card,
+        BuyTeckits,
+        speakers
     }
 }
 </script>

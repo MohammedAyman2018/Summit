@@ -3,7 +3,7 @@
 
   <carousel />
   <timer />
-  <speakers />
+  <speakers :object=pass > </speakers>
   <workshops />
   <Speaches />
   <Subscribtion /> 
@@ -36,6 +36,14 @@ export default {
     
   //   }
   // },
+  data(){
+        return{
+            pass:{
+                 number: 3 ,
+                 all: false
+            }
+        }
+    },
   components:{
       carousel,
       timer,
