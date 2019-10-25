@@ -34,7 +34,7 @@
             </li>
             <li class="text-center my-2 sm:inline-block">
               <nuxt-link
-                to="/TICKETS"
+                to="/Tickets"
                 class="p-5 text-white font-black inline-block p-4 uppercase"
                 exact
                 active-class="active"
@@ -42,7 +42,7 @@
             </li>
             <li class="text-center my-2 sm:inline-block">
               <nuxt-link
-                to="/BLOG"
+                to="/Blog"
                 class="p-5 text-white font-black inline-block p-4 uppercase"
                 exact
                 active-class="active"
@@ -50,7 +50,7 @@
             </li>
             <li class="text-center my-2 sm:inline-block">
               <nuxt-link
-                to="/CONTACT"
+                to="/Contact"
                 class="p-5 text-white font-black inline-block p-4 uppercase"
                 exact
                 active-class="active"

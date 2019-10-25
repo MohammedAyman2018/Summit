@@ -1,5 +1,5 @@
 <template>
-    <div class="banner pl-0 sm:pl-24 p-24 flex justify-content-end">
+    <div class="banner pl-0 sm:pl-24 p-32 flex justify-content-end">
         <h3 class="text-white font-bold text-6xl">{{ text }}</h3>
     </div>
 </template>
