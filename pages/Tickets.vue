@@ -15,10 +15,6 @@
     </div>
 </template>
 
-<style scoped>
-
-</style>
-
 <script>
 import banner from '~/components/utils/banner';
 import card from '~/components/Card';
