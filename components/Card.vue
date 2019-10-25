@@ -1,14 +1,14 @@
 <template>
     <div :class=classes>
-        <div :class=wrapperClass class="h-full py-8 bg-white px-2 mx-4 text-center rounded-lg">
+        <div :class=wrapperClass class="h-full py-8 bg-white lg:px-2 lg:mx-4 md:mx-2 mx-0  text-center rounded-lg">
 
-            <header class="text-center p-8">
+            <header class="text-center lg:p-8">
                 <p class="text-xl font-bold text-gray-700">{{headerText.level}}</p>
                 <p class="text-4xl font-extrabold">{{headerText.time}}</p>
                 <p class="text-5xl font-extrabold text-indigo-600">{{headerText.cost}}</p>
             </header>
             <hr class="border-gray-300">
-            <ul class="pl-16 p-8 text-left">
+            <ul class="lg:pl-16 p-8 text-left">
                 <li class="my-2" :key='index' v-for="(feat,index) in feats">
                     <img v-if="index<how_many" src="~/assets/img/check.png" alt="check" class="inline-block mx-2">
                     <img v-else src="~/assets/img/close.png" alt="check" class="inline-block mx-2">
