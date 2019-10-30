@@ -3,17 +3,13 @@
 
   <carousel />
   <timer />
-  <speakers :object=pass > </speakers>
+  <speakers :object=pass /> 
   <workshops />
   <Speaches />
   <Subscribtion /> 
 </div>
 </template>
-<style scoped>
-h2,h1,h3,h4,h5,h6 , p {
-    -webkit-font-smoothing: antialiased;
-}
-</style>
+
 <script>
 import carousel from '~/components/Carousel';
 import timer from '~/components/Timer';
