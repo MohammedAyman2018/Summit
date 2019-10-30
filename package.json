@@ -1,6 +1,9 @@
 {
   "name": "my-first-app",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.13.0"
+  },
   "description": "My premium Nuxt.js project",
   "author": "MohammedAyman2018",
   "private": true,
