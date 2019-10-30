@@ -21,7 +21,7 @@ import banner from '~/components/utils/banner';
 import heading from '~/components/utils/heading';
 import card from '~/components/GuestCard';
 import BuyTeckits from '~/components/BuyTeckits';
-import speakers from '~/components/Speakers';
+import speakers from '~/components/Instructors';
 
 export default {
     data(){

@@ -25,6 +25,7 @@
 </template>
 
 <style scoped>
+@import 'tailwindcss';
 .image{
   background-image: url('~assets/img/workshop.jpg');
   min-height: 500px ;

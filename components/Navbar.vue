@@ -79,6 +79,7 @@
 </template>
 
 <style>
+
 nav {
   background: linear-gradient(to right, #ff1a6b, #2a34d0);
 }

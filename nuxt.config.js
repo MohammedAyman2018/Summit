@@ -5,15 +5,15 @@ export default {
   ** Headers of the page
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Summit | Mohammed Ayman',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: 'Practising on Vue.js(Nuxt.js) with Tailwind' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', type: 'text/css', href: 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css' },
+      { rel: 'icon', type: 'image/x-icon', href: '~/assets/img/logo.png' },
+
     ],
     script: [
       { src: "https://kit.fontawesome.com/7ccf14bcd9.js"},
@@ -23,12 +23,12 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#000' },
   /*
   ** Global CSS
   */
   css: [
-    '~/assets/animatePage.css'
+    '~/static/animatePage.css',
   ],
   /*
   ** Plugins to load before mounting the App
@@ -59,13 +59,13 @@ export default {
   ** Build configuration
   */
   build: {
-    vendor: ['wowjs'],
 
     /*
     ** You can extend webpack config here
     */
    
-    extend (config, ctx) {
+    extend (config, ctx, isDev ) {
+      
     }
   }
 }
