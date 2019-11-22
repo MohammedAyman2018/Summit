@@ -41,9 +41,6 @@ export default {
     computed: {
         counter(){
             return this.$store.state.counter
-        },
-        add_images(){
-            
         }
     }
 }
